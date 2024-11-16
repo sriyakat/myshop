@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!--add AOS link -->
+       <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- css stylesheet link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- font awesome cdn link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!-- Header section one!................. -->
+    <header class="header_container" data-aos="fade-down">
+      <div class="logo">
+        <p>
+          <i class="fa-solid fa-phone" style="margin-right: 6px"></i
+          >+919598805934
+        </p>
+        <p>
+          <i class="fa-solid fa-envelope" style="margin-right: 6px"></i
+          >shaikhriyakt786@gmail.com
+        </p>
+      </div>
+      <!--end logo-->
+      <div class="select_container">
+        <div class="language">
+          <select class="language_select">
+            <option value="en">English</option>
+            <option value="es">Español</option>
+            <option value="fr">Français</option>
+            <option value="de">Deutsch</option>
+            <option value="hi">हिन्दी</option>
+            <option value="zh">中文</option>
+          </select>
+        </div>
+        <!--end language-->
+
+        <div class="currency">
+          <select class="currency_select">
+            <option>INR</option>
+            <option>Euro</option>
+            <option>EURO</option>
+          </select>
+        </div>
+        <!--end currency-->
+        <div class="login">
+          <ul>
+            <li><a href="">Log in</a></li>
+            <li><a href="">Register</a></li>
+          </ul>
+        </div>
+        <!--end logIn-->
+      </div>
+      <!--end select-container-->
+    </header>
+
+    <!-- nav section............................... -->
+    <nav class="nav_container">
+      <div class="nav_logo" data-aos="fade-right">
+        <h2><span>R</span>-kart</h2>
+      </div><!--end nav_logo-->
+
+      <div class="nav_list" data-aos="fade-down">
+        <ul>
+          <li><a href="men.html">Men</a></li>
+          <li><a href="women.html">Women</a></li>
+          <li><a href="kids.html">Baby & Kids</a></li>
+          <li><a href="electronic.html">Electronics</a></li>
+          <!-- <li><a href="">TV & Application</a></li> -->
+          <li><a href="">Offer Zone</a></li>
+        </ul>
+      </div><!--end nav_list-->
+
+      <div class="nav_icons" data-aos="fade-left">
+        <ul>
+          <li>
+            
+            <div class="search_container">
+              <input type="text" id="searchInput" placeholder="Search..." class="hidden">
+              <a href="javascript:void(0)" onclick="toggleSearchBar()">
+                  <i class="fa-solid fa-magnifying-glass search_icon" ></i>
+              </a>
+          </div>
+          </li>
+          <li>
+            <a href="" id="addToCard"><i class="fa-solid fa-cart-shopping"></i></a>
+          </li>
+        </ul>
+      </div>
+      <!--end nav_icon-->
+
+      <div class="nav_ham">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <!--end nav_ham-->
+    </nav>
+
+    <main>
+      <!-- section One......................... -->
+      <section class="slider">
+        <div class="card_one" >         
+           <div class="card_one_image" data-aos="fade-right">
+            <img src="images/card_one.png" alt="" />
+          </div>
+          <!--end card_one_image-->
+
+          <div class="card_content" data-aos="fade-left">
+            <p class="f">NEW FASHION</p>
+            <h3 class="h3">Arizitia</h3>
+            <h1 class="h1">New collection</h1>
+            <p class="f">
+              Fashion is the art of expressing individuality through style,
+              blending creativity with confidence.
+            </p>
+            <button>DISCOVER NOW</button>
+          </div>
+          <!--end card_content-->
+        </div>
+        <!--end crd_one-->
+
+        <div class="card_one">
+          <div class="card_one_image">
+            <img src="images/card_one1-removebg-preview.png" />
+          </div>
+          <div class="card_content">
+            <p class="f">SUMMER VIBES</p>
+            <h3 class="h3">Luxe Trends</h3>
+            <h1 class="h1">Bright & Bold</h1>
+            <p class="f">
+              Stand out with this season's hottest trends in vibrant colors and
+              prints.
+            </p>
+            <button>EXPLORE</button>
+          </div>
+        </div>
+
+        <div class="card_one">
+          <div class="card_one_image">
+            <img src="images/card_one2-removebg-preview.png" />
+          </div>
+          <!--end card_one_image-->
+          <div class="card_content">
+            <p class="f">STREET STYLE</p>
+            <h3 class="h3">Urban Chic</h3>
+            <h1 class="h1">Fall Collection</h1>
+            <p class="f">
+              Discover the energy of street style fashion for bold, confident
+              looks.
+            </p>
+            <button>SHOP NOW</button>
+          </div>
+          <!--end card_content-->
+        </div>
+        <!--end card_one-->
+
+        <div class="slider-nav prev" onclick="moveSlide(-1)">&#10094;</div>
+        <div class="slider-nav next" onclick="moveSlide(1)">&#10095;</div>
+      </section>
+      <!--end slider-->
+
+      <!-- section two.................................... -->
+      <section class="E_container">
+        <div class="E_heading"   data-aos="fade-left">
+          <h3>
+            <span
+              >Stay inspired with <br />
+              our collections this week</span
+            >
+          </h3>
+        </div>
+        <hr style="color: rgb(245, 43, 7); width: 30%" />
+        <div class="E_content"  data-aos="fade-right">
+          <p>
+            Ultimately, fashion is about confidence. When you wear something
+            that makes you feel good, it shows. Embrace styles that resonate
+            with you, and don’t be afraid to step out of your comfort zone.
+            Fashion is an ever-evolving journey, and every outfit is a new
+            chance to express yourself!
+          </p>
+        </div>
+        <!--end E_content-->
+      </section><!--end E_container-->
+
+      <!-- section three................................. -->
+      <section class="best_seller">
+       <div id="chart">
+          <div class="best_seller_heading">
+          <h2 data-aos="fade-up">Best Seller</h2>
+         </div><!--end best_seller_heading-->
+
+         <div class="best_seller_container"  data-aos="fade-up">
+          <div class="best_seller_image " id="same">
+            <img src="images/best_seller_saari1.webp" alt="" />
+            <img src="images/best_sellerdenim_shirt.webp" alt="" />
+            <img src="images/best_seller_shirt.webp" alt="" />
+            <img src="images/best_seller_suit.webp" alt="" />
+          </div><!--end best_seller_image-->
+          </div><!--end best_seller_container-->
+        </div>
+      </section><!--end best_seller-->
+
+      <!-- section four.................................. -->
+      <section class="best_seller">
+        <div class="best_seller_heading">
+          <h2 data-aos="slide-down">New Arrivals</h2>
+        </div><!--end best_seller_heading-->
+
+        <div class="best_seller_container" data-aos="zoom-in-up">
+          <div class="best_seller_image" id="same">
+            <img src="images/ew_arrivals_watch.webp" alt="" />
+            <img src="images/new_arrivals_bag.webp" alt="" />
+            <img src="images/new_arrivals_shose.webp" alt="" />
+            <img src="images/new_arrivals_jacket.webp" alt="" />
+            <img src="images/new_arrivals_darmaRoller.webp" alt="" />
+            <img src="images/new_arrivals_handbag.webp" alt="" />
+            <img src="images/new_arrivals_jacket1.webp" alt="" />
+            <img src="images/new_arrivals_shose1.webp" alt="" />
+          </div>
+          <!--end best_seller_image-->
+        </div>
+        <!--end best_seller_container-->
+      </section><!--end best_seller-->
+
+      <!-- section five.............................. -->
+      <section class="hot_sale">
+        <div class="hot_sale_header">
+          <h2>Hot Sales</h2>
+        </div>
+        <!--end hot_sale_header-->
+
+        <div class="hot_sale_container">
+          <div class="hot_sale_card">
+            <div class="hot_sale_cardImage">
+              <img src="images/ew_arrivals_watch.webp"  data-aos="zoom-out-up"/>
+              <h3 class="hot_sale_add_item">+Add To Cart</h3>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+              </span>
+              <h4 class="hot_sale_price">$357.75</h4>
+            </div>
+            <!--end hot_sale_cardImage-->
+          </div>
+          <!--end hot_sale_card-->
+
+          <div class="hot_sale_card">
+            <div class="hot_sale_cardImage">
+              <img src="images/hor_sale_headphone.webp"   data-aos="zoom-out-up"/>
+              <h3 class="hot_sale_add_item">+Add To Cart</h3>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+              <h4 class="hot_sale_price">$69.37</h4>
+            </div>
+            <!--end hot_sale_cardImage-->
+          </div>
+          <!--end hot_sale_card-->
+
+          <div class="hot_sale_card">
+            <div class="hot_sale_cardImage">
+              <img src="images/hot_sale_troolybag.webp"  data-aos="zoom-out-up"/>
+              <h3 class="hot_sale_add_item">+Add To Cart</h3>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+              <h4 class="hot_sale_price">$286.27</h4>
+            </div>
+            <!--end hot_sale_cardImage-->
+          </div>
+          <!--end hot_sale_card-->
+
+          <div class="hot_sale_card">
+            <div class="hot_sale_cardImage">
+              <img src="images/hot_sele_bag.webp"  data-aos="zoom-out-up"/>
+              <h3 class="hot_sale_add_item">+Add To Cart</h3>
+              <span>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star-half-stroke"></i>
+              </span>
+              <h4 class="hot_sale_price">$193.82</h4>
+            </div>
+            <!--end hot_sale_cardImage-->
+          </div>
+          <!--end hot_sale_card-->
+        </div>
+      </section>
+
+      <!-- section six.............................. -->
+      <section class="bag">
+        <div class="bag_text" data-aos="fade-right">
+          <h2 class="one">Clothings Hot</h2>
+          <h2 class="one1">shoe Collection</h2>
+          <h2 class="one">Accesaries</h2>
+        </div>
+        <!--end bag_text-->
+
+        <div class="bag_container">
+          <div class="bag_image">
+            <img src="images/bag2-Photoroom.png" data-aos="fade-up" />
+          </div>
+          <div class="sale">
+            <p>Sale of</p>
+            <h3>$19.34</h3>
+          </div>
+        </div>
+        <!-- end bag_container-->
+
+        <div class="bag_details" data-aos="fade-left">
+          <p class="bag_details_p">DEAL OF THE WEEK</p>
+          <h2 class="bag_details_h2">Multi-pocket Hand Bag Black</h2>
+          <p class="bag_details_pp">
+            Available in various designs like totes, crossbody bags, and
+            clutches, each serves a unique purpose. Crafted from materials like
+            leather and canvas, they blend durability with elegance.
+          </p>
+          <button>SHOP NOW</button>
+        </div>
+        <!--END bag_details-->
+      </section>
+    </main>
+     <!-- footer section.............................. -->
+    <footer class="footer"  data-aos="zoom-out">
+    <div class="footer-container">
+        
+        <!-- About Us Section -->
+        <div class="footer-section about">
+            <h3>About Us</h3>
+            <p>Your go-to platform for the latest trends and best deals. Explore a wide range of quality products curated just for you.</p>
+        </div>
+
+        <!-- Customer Service Section -->
+        <div class="footer-section customer-service">
+            <h3>Customer Service</h3>
+            <ul>
+                <li><a href="#faq">FAQ</a></li>
+                <li><a href="#shipping">Shipping & Returns</a></li>
+                <li><a href="#privacy">Privacy Policy</a></li>
+                <li><a href="#terms">Terms & Conditions</a></li>
+            </ul>
+        </div>
+
+        <!-- Quick Links Section -->
+        <div class="footer-section quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#newarrivals">New Arrivals</a></li>
+                <li><a href="#bestsellers">Best Sellers</a></li>
+                <li><a href="#offers">Special Offers</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Newsletter Section -->
+        <div class="footer-section newsletter">
+            <h3>Stay Connected</h3>
+            <p>Subscribe to our newsletter for the latest updates and exclusive offers.</p>
+            <form class="newsletter-form" onsubmit="showThankYouMessage(event)">
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Social Media & Footer Bottom -->
+    <div class="footer-bottom">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://x.com/home?lang=en"><i class="fab fa-twitter"></i></a>
+            <a href="https://www.instagram.com/?hl=en"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/feed/"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <p>&copy; 2024 MyEcommerce. All Rights Reserved.</p>
+    </div>
+    </footer>
+
+
+
+    <script src="script.js"></script>
+
+    <!-- our AOS data -->
+       <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({
+       duration: 1000,
+       delay:500,
+   } );
+  </script>
+  </body>
+</html>
